@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 650px;
+    border-radius: 22px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 30px #00000020;
+}
+
+/* Left side */
+.login-box {
+    width: 43%;
+    background: #002d5c;
+    color: white;
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    height:114px ;
+    width:419px ;
+    top: 80px; 
+    left:89px ;
+}
+
+.logo-icon {
+    color: #b5d943;
+    font-size: 34px;
+}
+
+.green {
+    color: #b5d943;
+}
+
+.blue {
+    color: #36b5e8;
+}
+
+h1 {
+    font-size: 27px;
+    margin-bottom: 35px;
+    line-height: 1.4;
+}
+/*sign box*/
+.input-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #76a9d8;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    gap: 12px;
+}
+
+.input-box label {
+    color: #46d5ed;
+    font-size: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.input-box input::placeholder {
+    color: #d3e3f5;
+}
+
+.forgot {
+    text-align: right;
+    margin: 5px 0 35px;
+}
+
+a {
+    color: #e0edff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.signin {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #1598e8;
+    color: white;
+    font-weight: bold;
+}
+
+.signin:hover {
+    background: #087cc4;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.or span {
+    height: 1px;
+    background: #8eb4dc;
+    flex: 1;
+}
+
+.or p {
+    font-size: 12px;
+}
+
+.social {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.social:hover {
+    background: #ffffff15;
+}
+
+.create {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #d3e3f5;
+}
+
+/* Right side */
+.image-box {
+    width: 859px; 
+    height: 1024px; 
+    left:581 ;
+    background-image: url("study-desk.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 430px;
+        min-height: auto;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .image-box {
+        display: none;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
